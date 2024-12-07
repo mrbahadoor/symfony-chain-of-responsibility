@@ -1,0 +1,9 @@
+{{ form_start(form) }}
+    <div class="form-group mb-3">
+        {{ form_label(form.comment) }}
+        {{ form_widget(form.comment, {'attr': {'class': 'form-control', 'rows': 5}}) }}
+    </div>
+    <div class="form-group">
+        {{ form_widget(form.submit, {'attr': {'class': 'btn btn-primary'}}) }}
+    </div>
+{{ form_end(form) }}
